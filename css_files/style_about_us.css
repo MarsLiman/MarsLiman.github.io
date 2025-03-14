@@ -1,0 +1,224 @@
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #A886F8;
+}
+h3 {
+    color: white
+}
+
+footer {
+    background-color: rgb(15, 15, 15); /* Цвет фона */
+    padding: 20px; /* Отступы */
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    
+}
+
+.main-title {
+    font-family: 'Just Another Hand', cursive; /* Применение шрифта */
+    font-size: 60px; /* Установка размера шрифта */ 
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.transport-offers {
+    display: flex; /* Используем Flexbox для распределения элементов */
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: space-between; /* Распределяет пространство между элементами */
+}
+
+.offer {
+    flex: 1 1 calc(33.33% - 10px); /* Элементы занимают 33.33% ширины с отступами */
+    margin: 5px; /* Отступы между элементами */
+    box-sizing: border-box; /* Учитываем отступы в ширине */
+}
+
+.image-container {
+    text-align: center; /* Центрируем содержимое внутри контейнера */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container img {
+    max-width: 100%; /* Изображения адаптируются к ширине контейнера */
+    height: auto; /* Сохраняем пропорции изображений */
+}
+
+.offer-button {
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    padding: 10px; /* Внутренние отступы для кнопки */
+    font-size: 1rem; /* Размер шрифта кнопки */
+}
+
+/* Медиа-запрос для уменьшения ширины экрана */
+@media (max-width: 768px) {
+    .offer {
+        flex: 1 1 100%; /* На маленьких экранах элементы занимают 100% ширины */
+    }
+}
+
+
+.search-container {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #A886F8;
+    background-image: url('../images/search_image.jpg');
+    filter: grayscale(0.1);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    /*margin: 20px 0;*/
+}
+
+.discount-button {
+    background-color: #a886f9;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 5px; 
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Занимает всю ширину родителя */
+}
+
+.search-box input {
+    padding: 10px;
+    border: 1px solid #A886F8;
+    border-radius: 5px 0 0 5px; /* Закругление левой стороны */
+    outline: none; /* Убираем обводку при фокусе */
+    width: 100%; /* Занимает всю ширину родителя */
+    max-width: 900px; /* Максимальная ширина в пикселях */
+}
+
+.search-button {
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    margin: 0 10px;
+    padding: 12px 20px; /* Увеличение размера кнопок */
+    background-color: white; /* Пурпурный цвет кнопок */
+    color: black; /* Цвет текста кнопок */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Скругление углов */
+    cursor: pointer; /* Курсор при наведении */
+    font-size: 16px; /* Увеличение размера шрифта кнопок */
+}
+
+.account-button {
+    display: flex; /* Используем Flexbox для кнопок */
+    flex-direction: column; /* Располагаем элементы внутри кнопки вертикально */
+    align-items: center; /* Центрируем содержимое кнопки */
+    text-align: center; /* Центрируем текст внутри кнопки */
+    padding: 10px; /* Внутренние отступы для кнопки */
+    border: none; /* Убираем стандартные границы кнопки */
+    background-color: #f0f0f0; /* Цвет фона кнопки */
+    cursor: pointer; /* Указатель при наведении */
+    flex: 1; /* Позволяем кнопкам занимать равное пространство */
+}
+
+.account-button span {
+    font-size: 24px;
+}
+
+.offer {
+    flex: 1 1 30%; /* Позволяет элементам занимать 30% ширины контейнера */
+    margin: 10px; /* Добавляет отступы между элементами */
+}
+
+.offer img {
+    width: 100%; /* Заставляет изображение занимать всю ширину контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
+    display: block; /* Убирает отступы снизу, которые могут быть у изображений */
+    border-radius: 10px;
+}
+
+
+.footer-container {
+    display: flex; /* Flexbox для контейнера */
+    justify-content: space-between; /* Распределяем элементы по краям */
+    width: 100%; /* Занимаем всю ширину */
+    margin-bottom: 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column; /* Вертикальное выравнивание */
+}
+
+.icons {
+    margin-top: 10px; /* Отступ сверху для иконок */
+}
+
+.icon {
+    margin-right: 10px; /* Отступ между иконками */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #000; /* Цвет текста */
+}
+
+input[type="email"] {
+    margin-left: 10px; /* Отступ слева от email */
+    padding: 5px; /* Отступ внутри текстового поля */
+    border: 1px solid #ccc; /* Граница поля ввода */
+    border-radius: 4px; /* Закругленные углы */
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: flex-end; /* Выравнивание по правому краю */
+}
+
+.subscribe-input {
+    display: flex; /* Группируем элементы в одну строку */
+    align-items: center; /* Выравниваем по центру вертикально */
+}
+
+.subscribe-input span {
+    margin-right: 5px; /* Отступ между текстом и полем ввода */
+}
+
+.subscribe-button {
+    margin-top: 5px; /* Отступ сверху для кнопки */
+    color: aliceblue; /* Цвет текста кнопки */
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Указатель при наведении */
+    right: 0;
+}
+
+.subscribe-input span {
+    margin-right: 10px; /* Отступ между текстом и полем ввода */
+    font-family: 'Work Sans', sans-serif; /* Применение шрифта Work Sans */
+    font-size: 20px;
+}
+
+.end-info {
+    color: aliceblue; 
+    text-align: left; 
+    margin-top: 10px; 
+    display: flex; 
+    justify-content: space-between;
+}
+
+.end-info span {
+    flex-grow: 1; /* Позволяет элементам занимать равное пространство */
+}
